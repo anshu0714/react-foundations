@@ -1,0 +1,21 @@
+{
+  "name": "igniting_and_laying_foundation",
+  "version": "1.0.0",
+  "description": "Namaste React - Episode 2 and 3",
+  "keywords": [
+    "react"
+  ],
+  "license": "ISC",
+  "author": "Anshu Jha",
+  "type": "commonjs",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "parcel": "^2.15.4"
+  },
+  "dependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  }
+}
