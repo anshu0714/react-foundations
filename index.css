@@ -2,3 +2,9 @@
   background-color: beige;
   padding: 20px;
 }
+
+#js-inside-jsx-root{
+  background-color: lightblue;
+  padding: 20px;
+  margin-top: 20px;
+}

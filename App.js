@@ -82,6 +82,23 @@ const nestedFunctionalRoot = ReactDOM.createRoot(
 nestedFunctionalRoot.render(<NestedFunctionalComponent />);
 
 /* ------------------------------
+   JavaScript Code in JSX
+--------------------------------*/
+const element = <h1>Namaste React using JSX with JavaScript! 🌟</h1>;
+const jsInsideJsx = (
+  <div>
+    {element}
+    <p>{2 + 3}</p>
+    <p>{Math.random()}</p>
+  </div>
+);
+
+const jsInsideJsxRoot = ReactDOM.createRoot(
+  document.getElementById("js-inside-jsx-root")
+);
+jsInsideJsxRoot.render(jsInsideJsx);
+
+/* ------------------------------
    React Components
    - Class-Based Component
 --------------------------------*/
