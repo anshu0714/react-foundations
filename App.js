@@ -72,6 +72,8 @@ const NestedFunctionalComponent = () => {
     <div>
       <h1>Namaste React using Nested Functional Component! 🌟</h1>
       <FunctionalComponent />
+      <FunctionalComponent></FunctionalComponent>
+      {FunctionalComponent()}
     </div>
   );
 };
@@ -85,11 +87,13 @@ nestedFunctionalRoot.render(<NestedFunctionalComponent />);
    JavaScript Code in JSX
 --------------------------------*/
 const element = <h1>Namaste React using JSX with JavaScript! 🌟</h1>;
+const text = "This is a text inside JSX!";
 const jsInsideJsx = (
   <div>
     {element}
     <p>{2 + 3}</p>
     <p>{Math.random()}</p>
+    <p>{text}</p>
   </div>
 );
 
