@@ -45,6 +45,7 @@ console.log(jsxHeadingMultiLine); // React Element (JS Object)
    React Components
    - Functional Component
    - Shorthand Functional Component
+   - Component Composition / Nested Functional Component
 --------------------------------*/
 const FunctionalComponent = () => {
   return <h1>Namaste React using Functional Component! 🌟</h1>;
@@ -65,6 +66,20 @@ const functionalRootShort = ReactDOM.createRoot(
   document.getElementById("functional-root-short")
 );
 functionalRootShort.render(<FunctionalComponentShortHand />);
+
+const NestedFunctionalComponent = () => {
+  return (
+    <div>
+      <h1>Namaste React using Nested Functional Component! 🌟</h1>
+      <FunctionalComponent />
+    </div>
+  );
+};
+
+const nestedFunctionalRoot = ReactDOM.createRoot(
+  document.getElementById("functional-root-nested")
+);
+nestedFunctionalRoot.render(<NestedFunctionalComponent />);
 
 /* ------------------------------
    React Components
